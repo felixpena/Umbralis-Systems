@@ -331,10 +331,10 @@ El formulario actualmente es **solo frontend**. Al hacer submit muestra un mensa
 
 ### Opción A — Formspree (ACTIVO)
 
-Endpoint: `https://formspree.io/f/mkoewoor`
+Endpoint configurado en `index.html`. El ID se gestiona directamente en el archivo fuente — no se documenta aquí para evitar exposición en repositorios públicos.
 
 ```js
-fetch('https://formspree.io/f/mkoewoor', {
+fetch('https://formspree.io/f/<ID>', {
   method: 'POST',
   body: new FormData(form),
   headers: { 'Accept': 'application/json' }
@@ -439,7 +439,7 @@ Búsqueda rápida por texto para cambiar los datos clave:
 | Dominio canonical | `https://umbralis.com` | Dominio real |
 | OG image URL | `https://umbralis.com/og-image.jpg` | URL real de la imagen |
 | Ubicación | `Santiago, Chile` | Ciudad específica si corresponde |
-| Formspree ID | `mkoewoor` | Configurado — `https://formspree.io/f/mkoewoor` |
+| Formspree ID | Ver `index.html` directamente | No documentado aquí (repo público) |
 
 ---
 
